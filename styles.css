@@ -244,3 +244,14 @@ button:hover {
     text-align: center;
     text-transform: uppercase;
 }
+
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg); /* Alinha e rotaciona o texto */
+    font-size: 60px; /* Tamanho da fonte */
+    color: rgba(255, 0, 0, 0.1); /* Cor e opacidade do texto */
+    pointer-events: none; /* Ignora interações do mouse */
+    white-space: nowrap; /* Impede que o texto quebre em múltiplas linhas */
+}
