@@ -251,7 +251,8 @@ button:hover {
     left: 10%; /* Distância da parte esquerda */
     transform: rotate(45deg); /* Rotaciona o texto em 45 graus */
     font-size: 60px; /* Tamanho da fonte */
-    color: rgba(255, 0, 0, 0.1); /* Cor e opacidade do texto */
+    color: #FF0000; /* Vermelho sólido */
+    opacity: 0.8; /* Ajuste a opacidade para um valor que não atrapalhe a leitura */
     pointer-events: none; /* Ignora interações do mouse */
     white-space: nowrap; /* Impede que o texto quebre em múltiplas linhas */
     z-index: 0; /* Garantir que fique atrás dos outros elementos */
