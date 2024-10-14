@@ -101,7 +101,8 @@ button:hover {
     overflow: hidden;
     width: 96mm;
     height: 65mm;
-    background: linear-gradient(135deg, #1a1aff 87%, #f54f4f 13%); /* Gradiente azul escuro para vermelho */
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0109fc 15%, #fc6b6d ); /* Gradiente azul escuro para vermelho */
     padding: 10px;
     border: 2px solid #f54f4f; /* Bordas vermelhas */
     display: grid;
@@ -219,9 +220,9 @@ button:hover {
 /* Estilo para a exibição da sigla da condição crônica */
 .chronic-condition {
     position: absolute;
-    top: 30px;
+    top: -70px;
     right: 10px;
-    color: red;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
@@ -230,8 +231,8 @@ button:hover {
 /* Estilo para a marca d'água */
 .watermark {
     position: absolute;
-    top: 48%;
-    left: 84%;
+    top: 52%;
+    left: 80%;
     transform: translate(-50%, -50%);
     opacity: 0.9;
     pointer-events: none;
@@ -239,7 +240,7 @@ button:hover {
     display: none;
     font-size: 18px;
     font-weight: bold;
-    color: rgba(255, 247, 247, 0.7);
+    color: rgb(255, 255, 255);
     /* Tornado mais transparente */
     text-align: center;
     text-transform: uppercase;
@@ -248,11 +249,16 @@ button:hover {
 .watermark-diagonal {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%, -50%) rotate(-45deg);
     font-size: 35px;
     color: rgba(255, 0, 0, 0.3);
     white-space: nowrap;
     pointer-events: none;
     z-index: 0;
+}
+.info,
+.card-footer {
+    position: relative;
+    z-index: 1;
 }
