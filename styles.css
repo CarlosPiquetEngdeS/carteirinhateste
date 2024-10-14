@@ -100,7 +100,7 @@ button:hover {
     overflow: hidden;
     width: 96mm;
     height: 65mm;
-    background: linear-gradient(135deg, #0066da 68%, #f54f4f);
+    background: linear-gradient(135deg, #0066da 68%, #f54f4f 32%);
     padding: 10px;
     display: grid;
     grid-template-columns: 1fr 2fr;
