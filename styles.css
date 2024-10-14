@@ -1,0 +1,247 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e3f2fd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilos do formulário */
+.container {
+    background-color: white;
+    /* Alterado para branco para melhor contraste */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 15px;
+    /* Aumentado para melhor espaçamento */
+    text-transform: uppercase;
+    font-size: 32px;
+    /* Aumentado para melhor destaque */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    /* Aumentado para melhor espaçamento */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+input,
+select {
+    width: calc(90% - 20px);
+    padding: 12px;
+    /* Aumentado para maior área clicável */
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    /* Adicionado para destacar o campo */
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f8f8f8;
+    /* Alterado para um tom mais claro */
+    color: #000000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2),
+        inset 0 -3px 0 rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* Adicionada transição para borda */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+input:focus,
+select:focus {
+    border-color: #6200ea;
+    /* Cor de destaque ao focar no campo */
+    outline: none;
+    /* Remove o contorno padrão */
+}
+
+button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Transição para a sombra */
+}
+
+button:hover {
+    background-color: #3700b3;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Sombra ao passar o mouse */
+}
+
+/* Estilos do cartão */
+.card {
+    box-shadow: none;
+    overflow: hidden;
+    width: 96mm;
+    height: 65mm;
+    background: linear-gradient(135deg, #0066da 68%, #f54f4f);
+    border-radius: 15px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5px;
+    color: #fff;
+    position: relative;
+    margin-top: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+.photo {
+    grid-column: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+}
+
+.photo img.profile-image {
+    border-radius: 10px;
+    width: 65px;
+    height: 85px;
+    object-fit: cover;
+    margin: 5px;
+}
+
+#specialConditionContainer {
+    position: relative;
+}
+
+.special-condition-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: auto;
+}
+
+.info {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 5px;
+}
+
+.positioned-elements {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.positioned-elements p {
+    margin: 3px 0;
+    font-size: 9px;
+    color: #ffffff;
+    text-align: left;
+    white-space: nowrap;
+    margin-top: 1px;
+}
+
+.info h3 {
+    margin-bottom: 3px;
+    font-size: 9px;
+    color: rgb(255, 255, 255);
+}
+
+.info p {
+    margin-bottom: 3px;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.info hr {
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #fff;
+}
+
+#cardBloodType,
+#cardAllergies {
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+}
+
+.qr-section {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-section canvas {
+    width: 80px;
+    height: 80px;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 8px;
+    color: rgb(255, 254, 254);
+    text-align: right;
+}
+
+/* Estilo para a exibição da sigla da condição crônica */
+.chronic-condition {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+/* Estilo para a marca d'água */
+.watermark {
+    position: absolute;
+    top: 48%;
+    left: 84%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    pointer-events: none;
+    z-index: 0;
+    display: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(255, 247, 247, 0.7);
+    /* Tornado mais transparente */
+    text-align: center;
+    text-transform: uppercase;
+}
