@@ -295,25 +295,24 @@
                 <input type="text" id="planNumber">
             </div>
             <div class="form-group">
-                <label for="medicationsUsed">Está usando Medicações?</label>
-                <select id="medicationsUsed" onchange="toggleMedicationsInput()">
-                    <option value="" disabled selected>Selecione...</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-                <input type="text" id="medications" placeholder="Informe suas medicações" style="display:none;">
-            </div>
+    <label for="medicationsUsed">Está usando Medicações?</label>
+    <select id="medicationsUsed" onchange="toggleMedicationsInput()">
+        <option value="" disabled selected>Selecione...</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+    <input type="text" id="medications" placeholder="Informe suas medicações" style="display:none;" maxlength="38">
+</div>
 
-            <div class="form-group">
-                <label for="specialInstructionsUsed">Precisa de Orientações Especiais de Tratamento?</label>
-                <select id="specialInstructionsUsed" onchange="toggleSpecialInstructionsInput()">
-                    <option value="" disabled selected>Selecione...</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-                <input type="text" id="specialInstructions" placeholder="Informe as orientações especiais"
-                    style="display:none;" maxlength="36">
-            </div>
+<div class="form-group">
+    <label for="specialInstructionsUsed">Precisa de Orientações Especiais de Tratamento?</label>
+    <select id="specialInstructionsUsed" onchange="toggleSpecialInstructionsInput()">
+        <option value="" disabled selected>Selecione...</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+    <input type="text" id="specialInstructions" placeholder="Informe as orientações especiais" style="display:none;" maxlength="35">
+</div>
             <!-- Campo para Condições Especiais -->
             <div class="form-group">
                 <label for="specialConditions">Condições Especiais:</label>
