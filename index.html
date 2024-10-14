@@ -328,41 +328,39 @@
         </form>
     </div>
 
-    <div class="card" id="healthCard" style="display:none;">
-
-<div class="watermark2"         id="watermarkText">Emergência</div>
-
-        <div class="photo">
-            <img id="profileImage" class="profile-image" alt="Foto do Usuário">
-            <div id="specialConditionContainer">
-                <img id="specialConditionImage" class="special-condition-image" alt="Símbolo Condição Especial"
-                    style="display:none;">
-            </div>
-            <div class="positioned-elements">
-                <p><strong>Data de Nascimento:</strong> <span id="cardBirthDate"></span></p>
-                <p><strong>Grupo Sanguíneo:</strong> <span id="cardBloodType"></span></p>
-                <p><strong>Contato de Emergência:</strong> <span id="cardEmergencyContact"></span></p>
-                <p><strong>CPF:</strong> <span id="cardCpf"></span></p>
-                <p><strong>Alergias:</strong> <span id="cardAllergies"></span></p>
-            </div>
+   <div class="card" id="healthCard" style="display:none;">
+    <div class="watermark-diagonal" id="emergencyWatermark">Emergência</div>
+    <div class="photo">
+        <img id="profileImage" class="profile-image" alt="Foto do Usuário">
+        <div id="specialConditionContainer">
+            <img id="specialConditionImage" class="special-condition-image" alt="Símbolo Condição Especial"
+                style="display:none;">
         </div>
-        <div class="info">
-            <h3 id="cardName"></h3>
-            <hr>
-
-            <p><strong>Doador de Órgãos:</strong> <span id="cardOrganDonor"></span></p>
-            <p><strong>Condições Crônicas:</strong> <span id="cardChronicConditions"></span></p>
-            <p><strong>Implantes ou Próteses:</strong> <span id="cardImplants"></span></p>
-            <p><strong>Plano de Saúde:</strong> <span id="cardHealthPlan"></span></p>
-            <p><strong>Número do Plano:</strong> <span id="cardPlanNumber"></span></p>
-            <p><strong>Medicações:</strong> <span id="cardMedications"></span></p>
-            <p><strong>Instruções Especiais:</strong> <span id="cardSpecialInstructions"></span></p>
-            <div class="chronic-condition" id="cardChronicCondition"></div>
+        <div class="positioned-elements">
+            <p><strong>Data de Nascimento:</strong> <span id="cardBirthDate"></span></p>
+            <p><strong>Grupo Sanguíneo:</strong> <span id="cardBloodType"></span></p>
+            <p><strong>Contato de Emergência:</strong> <span id="cardEmergencyContact"></span></p>
+            <p><strong>CPF:</strong> <span id="cardCpf"></span></p>
+            <p><strong>Alergias:</strong> <span id="cardAllergies"></span></p>
         </div>
-        <div class="qr-section">
-            <canvas id="qrCode" class="qr-code"></canvas>
-        </div>
-        <div class="card-footer" id="cardFooter"></div>
+    </div>
+    <div class="info">
+        <h3 id="cardName"></h3>
+        <hr>
+        <p><strong>Doador de Órgãos:</strong> <span id="cardOrganDonor"></span></p>
+        <p><strong>Condições Crônicas:</strong> <span id="cardChronicConditions"></span></p>
+        <p><strong>Implantes ou Próteses:</strong> <span id="cardImplants"></span></p>
+        <p><strong>Plano de Saúde:</strong> <span id="cardHealthPlan"></span></p>
+        <p><strong>Número do Plano:</strong> <span id="cardPlanNumber"></span></p>
+        <p><strong>Medicações:</strong> <span id="cardMedications"></span></p>
+        <p><strong>Instruções Especiais:</strong> <span id="cardSpecialInstructions"></span></p>
+        <div class="chronic-condition" id="cardChronicCondition"></div>
+    </div>
+    <div class="qr-section">
+        <canvas id="qrCode" class="qr-code"></canvas>
+    </div>
+    <div class="card-footer" id="cardFooter"></div>
+</div>
         <div class="watermark" id="watermarkText"></div>
     </div>
 
