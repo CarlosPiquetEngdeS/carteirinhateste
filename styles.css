@@ -100,7 +100,7 @@ button:hover {
     box-shadow: none;
     overflow: hidden;
     width: 96mm;
-    height: 65mm;
+    height: 66mm;
     border-radius: 10px;
     background: linear-gradient(135deg, #0109fc 15%, #fc6b6d ); /* Gradiente azul escuro para vermelho */
     padding: 10px;
@@ -220,7 +220,7 @@ button:hover {
 /* Estilo para a exibição da sigla da condição crônica */
 .chronic-condition {
     position: absolute;
-    top: -70px;
+    top: -90px;
     right: 10px;
     color: rgb(255, 255, 255);
     font-weight: bold;
