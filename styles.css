@@ -1,3 +1,14 @@
+/* Variáveis de Cores e Tipografia */
+:root {
+    --primary-color: #6200ea; /* Cor principal */
+    --secondary-color: #03dac6; /* Cor secundária */
+    --accent-color: #ff0266; /* Cor de destaque */
+    --background-color: #e3f2fd; /* Cor de fundo */
+    --text-color: #212121; /* Cor do texto */
+    --font-family: 'Roboto', sans-serif; /* Fonte principal */
+}
+
+/* Estilos Gerais */
 * {
     margin: 0;
     padding: 0;
@@ -5,108 +16,101 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #e3f2fd;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 20px; /* Adicionado para espaçamento em telas pequenas */
 }
 
-/* Estilos do formulário */
+/* Estilos do Formulário */
 .container {
-    background-color: white;
-    /* Alterado para branco para melhor contraste */
+    background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
     width: 90%;
     max-width: 600px;
+    margin: 20px; /* Espaçamento para separação visual */
 }
 
 h1 {
     text-align: center;
-    color: #000000;
-    margin-bottom: 15px;
-    /* Aumentado para melhor espaçamento */
+    color: var(--text-color);
+    margin-bottom: 20px;
     text-transform: uppercase;
-    font-size: 32px;
-    /* Aumentado para melhor destaque */
+    font-size: 36px;
+    font-weight: 700;
 }
 
 .form-group {
     margin-bottom: 20px;
-    /* Aumentado para melhor espaçamento */
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     text-transform: uppercase;
+    font-weight: 500;
+    color: var(--primary-color);
 }
 
 input,
 select {
-    width: calc(90% - 20px);
+    width: 100%;
     padding: 12px;
-    /* Aumentado para maior área clicável */
     margin-top: 10px;
     border: 1px solid #ccc;
-    /* Adicionado para destacar o campo */
     border-radius: 10px;
     font-size: 16px;
     background-color: #f8f8f8;
-    /* Alterado para um tom mais claro */
-    color: #000000;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2),
-        inset 0 -3px 0 rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    /* Adicionada transição para borda */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 input:focus,
 select:focus {
-    border-color: #6200ea;
-    /* Cor de destaque ao focar no campo */
+    border-color: var(--primary-color);
     outline: none;
-    /* Remove o contorno padrão */
+    background-color: #e8f0fe; /* Leve mudança ao foco */
 }
 
 button {
     display: inline-block;
-    padding: 12px 20px;
-    background-color: #6200ea;
+    padding: 15px 25px;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    /* Transição para a sombra */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-    background-color: #3700b3;
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    /* Sombra ao passar o mouse */
 }
-
-/* Estilos do cartão */
 
 .card {
     box-shadow: none;
     overflow: visible;
-    width: 100mm;
-    height: auto;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #0109fc 15%, #fc6b6d ); /* Gradiente azul escuro para vermelho */
-    padding: 10px;
-    border: 2px solid #f54f4f; /* Bordas vermelhas */
+    width: 70%;
+    max-width: 400px;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #7a0404 55%, #fa7979  );
+    padding: 15px;
+    border: 2px solid #ff0000;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
     color: #fff;
     position: relative;
     margin-top: 20px;
@@ -126,7 +130,8 @@ button:hover {
 
 .photo img.profile-image {
     border-radius: 10px;
-    width: 65px;
+    width: 100%;
+    max-width: 65px;
     height: 85px;
     object-fit: cover;
     margin: 5px;
@@ -149,7 +154,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 5px;
+    padding-left: 10px;
     height: auto;
     overflow: visible;
 }
@@ -164,7 +169,7 @@ button:hover {
 
 .positioned-elements p, .info p {
     margin: 3px 0;
-    font-size: 9px;
+    font-size: 10px;
     color: #ffffff;
     text-align: left;
     white-space: normal;
@@ -173,11 +178,9 @@ button:hover {
 
 .info h3 {
     margin-bottom: 3px;
-    font-size: 9px;
-    color: rgb(255, 255, 255);
+    font-size: 12px;
+    color: #ffffff;
 }
-
-
 
 .info hr {
     margin: 5px 0;
@@ -185,12 +188,13 @@ button:hover {
     border-top: 1px solid #fff;
 }
 
-#cardBloodType{
-    color: rgb(255, 0, 0);
+#cardBloodType {
+    color: rgb(255, 255, 255);
     font-size: 12px;
 }
+
 #cardAllergies {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 8px;
 }
 
@@ -217,7 +221,6 @@ button:hover {
     text-align: right;
 }
 
-/* Estilo para a exibição da sigla da condição crônica */
 .chronic-condition {
     position: absolute;
     top: -90px;
@@ -228,7 +231,6 @@ button:hover {
     text-transform: uppercase;
 }
 
-/* Estilo para a marca d'água */
 .watermark {
     position: absolute;
     top: 52%;
@@ -241,7 +243,6 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
     color: rgb(255, 255, 255);
-    /* Tornado mais transparente */
     text-align: center;
     text-transform: uppercase;
 }
@@ -249,16 +250,24 @@ button:hover {
 .watermark-diagonal {
     position: absolute;
     top: 50%;
-    left: 53%;
+    left: 70%;
     transform: translate(-50%, -50%) rotate(-45deg);
     font-size: 35px;
-    color: rgba(255, 0, 0, 0.3);
+    color: rgba(255, 2, 2, 0.422);
     white-space: nowrap;
     pointer-events: none;
     z-index: 0;
 }
+
 .info,
 .card-footer {
     position: relative;
     z-index: 1;
 }
+
+a:focus,
+button:focus {
+    outline: 3px solid var(--accent-color);
+    outline-offset: 3px;
+}
+
