@@ -1,4 +1,3 @@
-/* Estilos gerais */
 * {
     margin: 0;
     padding: 0;
@@ -98,9 +97,9 @@ button:hover {
 
 .card {
     box-shadow: none;
-    overflow: hidden;
-    width: 96mm;
-    height: 66mm;
+    overflow: visible;
+    width: 100mm;
+    height: auto;
     border-radius: 10px;
     background: linear-gradient(135deg, #0109fc 15%, #fc6b6d ); /* Gradiente azul escuro para vermelho */
     padding: 10px;
@@ -151,6 +150,8 @@ button:hover {
     flex-direction: column;
     justify-content: flex-start;
     padding-left: 5px;
+    height: auto;
+    overflow: visible;
 }
 
 .positioned-elements {
@@ -161,13 +162,13 @@ button:hover {
     padding-left: 20px;
 }
 
-.positioned-elements p {
+.positioned-elements p, .info p {
     margin: 3px 0;
     font-size: 9px;
     color: #ffffff;
     text-align: left;
-    white-space: nowrap;
-    margin-top: 1px;
+    white-space: normal;
+    word-wrap: break-word;    
 }
 
 .info h3 {
@@ -176,11 +177,7 @@ button:hover {
     color: rgb(255, 255, 255);
 }
 
-.info p {
-    margin-bottom: 3px;
-    font-size: 9px;
-    line-height: 1.5;
-}
+
 
 .info hr {
     margin: 5px 0;
@@ -188,10 +185,13 @@ button:hover {
     border-top: 1px solid #fff;
 }
 
-#cardBloodType,
-#cardAllergies {
+#cardBloodType{
     color: rgb(255, 0, 0);
     font-size: 12px;
+}
+#cardAllergies {
+    color: rgb(255, 0, 0);
+    font-size: 8px;
 }
 
 .qr-section {
